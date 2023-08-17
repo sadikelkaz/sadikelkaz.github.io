@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"></link>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&family=Spline+Sans:wght@500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+
+        <div class="container-fluid" style="background-color: black; color: white;">
+            <div class="offset-md-2 col-md-8">
+                <div class="row">
+                    <div class="col-md-6 ban1" style="display: flex;">
+                        <img src="ilmt.png" alt="" style="width: 35px; height: 35px;">
+                        <ul style="display: flex;">
+                            <li><a href="#">Events</a></li>
+                            <li style="padding-left: 10%;"><a href="#">Music</a></li>
+                            <li style="padding-left: 10%;"><a href="#">Magazine</a></li>
+                        </ul>
+                        <i class="fa-solid fa-magnifying-glass"style="padding-left: 10%; padding-top: 1%;"></i>
+                    </div>
+                    <div class="col-md-6 ban2">
+                        <i style="padding: 2%;" class="fa-solid fa-user"></i>
+                        <a style="padding: 2%;" href="#">goPRO</a>
+                        <div id="myNav" class="overlay">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <div class="overlay-content">
+                              <a href="#">About</a>
+                              <a href="#">Services</a>
+                              <a href="#">Clients</a>
+                              <a href="#">Contact</a>
+                            </div>
+                            <style>
+                                .overlay {
+                                  height: 100%;
+                                  width: 0;
+                                  position: fixed;
+                                  z-index: 1;
+                                  top: 0;
+                                  left: 0;
+                                  background-color: rgb(0,0,0);
+                                  background-color: rgba(0,0,0, 0.9);
+                                  overflow-x: hidden;
+                                  transition: 0.5s;
+                                }
+                                
+                                .overlay-content {
+                                  position: relative;
+                                  top: 25%;
+                                  width: 100%;
+                                  text-align: center;
+                                  margin-top: 30px;
+                                }
+                                
+                                .overlay a {
+                                  padding: 8px;
+                                  text-decoration: none;
+                                  font-size: 36px;
+                                  color: #818181;
+                                  display: block;
+                                  transition: 0.3s;
+                                }
+                                
+                                .overlay a:hover, .overlay a:focus {
+                                  color: #f1f1f1;
+                                }
+                                
+                                .overlay .closebtn {
+                                  position: absolute;
+                                  top: 20px;
+                                  right: 45px;
+                                  font-size: 60px;
+                                }
+                                
+                                @media screen and (max-height: 450px) {
+                                  .overlay a {font-size: 20px}
+                                  .overlay .closebtn {
+                                  font-size: 40px;
+                                  top: 15px;
+                                  right: 35px;
+                                  }
+                                }
+                                </style>
+                          </div>
+                          
+                          <span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                          
+                          <script>
+                          function openNav() {
+                            document.getElementById("myNav").style.width = "100%";
+                          }
+                          
+                          function closeNav() {
+                            document.getElementById("myNav").style.width = "0%";
+                          }
+                          </script>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid px-0">
+            <div class="col-md-12 header" style="background-image: url(bg.jpeg); background-repeat: no-repeat; background-size: cover;">
+                <div class="row">
+                    <div class="offset-md-2 col-md-8">
+                        <div class="row">
+                            <div class="col-md-6" style="color: white;">
+                            <h1 style="font-size: 56px; padding-top: 35%;">KIDE PROJECT</h1>
+                            </div>
+                            <div class="col-md-6" style="align-items: right; justify-content:right; text-align: right;">
+                                <div style="background-image:url(kiddy.png); margin-top: 20%; margin-bottom: 5%; float: right; width: 220px; height: 220px; background-size: cover; background-repeat: no-repeat; border-radius: 50%;" class="kiddy">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid px-0" style="border-bottom: 0.5px solid rgb(207, 207, 207);">
+            <div class="col-md-12" style="background-color: black; color: white;">
+                <div class="offset-md-2 col-md-8">
+                    <div class="navbar" style="background-color: black; height: 90px">
+                        <a style="color: red;" href="#home">About</a>
+                        <a href="#news">Upcoming Events</a>
+                        <a href="#news">Past Events</a>
+                        <a href="#news">Biography</a>
+                        <a href="#news">RA News</a>
+                        <a href="#news">RA Editorial</a>
+                      </div>
+                      
+                        <style>
+                            .navbar {
+                              overflow: hidden;
+                              background-color: #333;
+                              font-family: Arial, Helvetica, sans-serif;
+                            }
+                            
+                            .navbar a {
+                              float: left;
+                              font-size: 16px;
+                              color: white;
+                              text-align: center;
+                              padding: 14px 16px;
+                              text-decoration: none;
+                            }
+                            
+                            .dropdown {
+                              float: left;
+                              overflow: hidden;
+                            }
+                            
+                            .dropdown .dropbtn {
+                              cursor: pointer;
+                              font-size: 16px;  
+                              border: none;
+                              outline: none;
+                              color: white;
+                              padding: 14px 16px;
+                              background-color: inherit;
+                              font-family: inherit;
+                              margin: 0;
+                            }
+                            
+                            .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+                              border-bottom: 1px solid red;
+                            }
+                            
+                            .dropdown-content {
+                              display: none;
+                              position: absolute;
+                              background-color: #f9f9f9;
+                              min-width: 160px;
+                              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                              z-index: 1;
+                            }
+                            
+                            .dropdown-content a {
+                              float: none;
+                              color: black;
+                              padding: 12px 16px;
+                              text-decoration: none;
+                              display: block;
+                              text-align: left;
+                            }
+                            
+                            .dropdown-content a:hover {
+                              background-color: #ddd;
+                            }
+                            
+                            .show {
+                              display: block;
+                            }
+                            </style>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid px-0">
+            <div class="col-md-12" style="background-color: black;">
+                <div class="offset-md-2 col-md-9" style="padding-top: 12px;">
+                    <ul style="color: white; list-style: none; margin: 0; margin-left: -2%; display: flex;">
+                        <li>
+                            <span style="font-size: 12px; opacity: 0.7;">Location</span> <br>
+                            <i style="margin-top: 15px;" class="fa-solid fa-globe"></i>Bosnia and Herzegovina
+                        </li>
+                        <li style="margin-left: 7%;">
+                            <span style="font-size: 12px; opacity: 0.7;">Links</span>
+                            <div class="links" style="width: 170px; margin-top: 12px; margin-bottom: 5%;">
+                                <a href="">Website</a>
+                                <a href="">Twitter</a>
+                                <a href="">Soundcloud</a>
+                                <a href="">Discogs</a>
+                                <a href="">Facebook</a>
+                                <a href="">Instagram</a>
+                            </div>
+                        </li>
+                        <li style="margin-left: 5%;">
+                            <span style="font-size: 12px; opacity: 0.7;">Followers</span>
+                            <p style="color: red; font-size: 42px;">40.6k</p>
+                        </li>
+                        <li style="margin-left: 8%; margin-top:2%;">
+                            <button style="background-color: black; border-radius: 10px; padding: 20px; font-size: 20px;" type="button" class="btn btn-danger"><i class="fa-solid fa-user-plus"></i> Follow</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid px-0">
+            <div class="col-md-12" style="background-color: #151515;">
+                <div class="offset-md-2 col-md-8" style="padding-bottom: 10%;">
+                    <h1 style="color: red; padding-top: 2%; margin-left: 15px;"≯
+                        UPCOMING EVENTS</h1>
+                    
+                    <ul style="display: flex; border-top: 1px solid gray; width: 70%; list-style: none;">
+                        <li class="slika"><img src="li.png" style="width: 300px; padding-top: 5%; margin-left: -10%;" alt=""></li>
+                        <li style="padding-top: 1%; color: white;">
+                            <span style="font-weight:bolder; color:rgb(114, 114, 114);">SAT, 22 JUL</span>
+                            <h1 class="naslov">Junction 2 Festival 2023 - Saturday</h1>
+                            <p class="text">Adam Beyer, Cirez D, Mathame, KAS:ST, Chris Avantgarde, Asch Pintura, Charlotte de Witte, Nina Kraviz, Carlita, DJ...</p>
+                            <i style="color: red;" class="fa-solid fa-location-dot"></i> Boston Manor Park
+                        </li>
+                    </ul>
+                    <ul style="display: flex; border-top: 1px solid gray; width: 70%; list-style: none;">
+                        <li class="slika"><img src="li1.jpeg" style="width: 300px; padding-top: 5%; margin-left: -10%;" alt=""></li>
+                        <li style="padding-top: 1%; color: white;">
+                            <span style="font-weight:bolder; color:rgb(114, 114, 114);">MON, 24 JUL</span>
+                            <h1 class="naslov">Eric Prydz present HOLO Ibiza</h1>
+                            <p class="text">Eric Prydz, Adam Beyer, Cristoph, Patrick Topping, Eats Everything, Sarah Story</p>
+                            <i style="color: red;" class="fa-solid fa-location-dot"></i> Hi Ibiza
+                        </li>
+                    </ul>
+                    <ul style="display: flex; border-top: 1px solid gray; width: 70%; list-style: none;">
+                        <li class="slika"><img src="li2.jpeg" style="width: 300px; padding-top: 5%; margin-left: -10%;" alt=""></li>
+                        <li style="padding-top: 1%; color: white;">
+                            <span style="font-weight:bolder; color:rgb(114, 114, 114);">SAT, 29 JUL</span>
+                            <h1 class="naslov">Monegros Desert Festival 2023</h1>
+                            <p class="text">999999999, Adam Beyer, Alinka, Amelie Lens, AnD, Andres Campo, Andy C, Anetha, Anfisa...</p>
+                            <i style="color: red;" class="fa-solid fa-location-dot"></i> Monegros Desert
+                        </li>
+                    </ul>
+                    <ul style="display: flex; border-top: 1px solid gray; width: 70%; list-style: none;">
+                        <li class="slika"><img src="li3.1.jpeg" style="width: 300px; padding-top: 5%; margin-left: -10%;" alt=""></li>
+                        <li style="padding-top: 1%; color: white;">
+                            <span style="font-weight:bolder; color:rgb(114, 114, 114);">THU, 3 AUG</span>
+                            <h1 class="naslov">Lovefest 2023</h1>
+                            <p class="text">999999999, Adam Beyer, Charlotte de Witte, Chris Liebing, Dennis Cruz, Enrico...</p>
+                            <i style="color: red;" class="fa-solid fa-location-dot"></i> Vrnjacka Banja
+                        </li>
+                    </ul>
+                    <ul style="display: flex; border-top: 1px solid gray; width: 70%; list-style: none;">
+                        <li class="slika"><img src="lli4.jpeg" style="width: 300px; padding-top: 5%; margin-left: -10%;" alt=""></li>
+                        <li style="padding-top: 1%; color: white;">
+                            <span style="font-weight:bolder; color:rgb(114, 114, 114);">SAT, 5 AUG</span>
+                            <h1 class="naslov">Family Piknik 2023</h1>
+                            <p class="text">Carl Cox, Adam Beyer, ANNA, Tom Pooks, Space 92, Popof, Ben Böhmer, Christopher...</p>
+                            <i style="color: red;" class="fa-solid fa-location-dot"></i> Frontignan
+                        </li>
+                    </ul>
+                    <button style="background-color: #151515; border-radius: 50px; padding: 20px; font-size: 16px; margin-top: 5%;" type="button" class="btn btn-danger">View more events</button>
+                </div>
+            </div>
+            <div class="col-md-12 cover" style="background-image: url(wp.jpeg); height: 150vh; background-repeat:no-repeat; background-size: cover;">
+            </div>
+        </div>
+
+
+
+        <div class="container-fluid px-0">
+            <div class="col-md-12">
+                <div class="offset-md-2 col-md-8">
+                    <br><br>
+                    <h1 style="color:red;"> ̸
+                        STATS</h1>
+                    <ul style="display: flex; list-style: none;">
+                        <li style="margin-top: 5%;">
+                            <i style="color:red;" class="fa-regular fa-user"></i> First event on RA
+                            <h1 style="font-size: 86px; padding-top: 25%; font-weight:700;">2000</h1>
+                        </li>
+                        <li style="margin-top: 5%; margin-left: 15%;">
+                            <i style="color:red;" class="fa-regular fa-user"></i> Regions most played
+                            <p style="font-size: 28px; font-weight: 600; padding: 0; margin:0; margin-top: 5%;">Ibiza, ES</p>
+                            <p style="font-size: 28px; font-weight: 600; padding: 0; margin:0;">Amsterdam, NL</p>
+                            <p style="font-size: 28px; font-weight: 600; padding: 0; margin:0;">London, UK</p>
+                            <p style="font-size: 28px; font-weight: 600; padding: 0; margin:0;">Miami, US</p>
+                            <p style="font-size: 28px; font-weight: 600; padding: 0; margin:0;">Barcelona, ES</p>
+                        </li>
+                        <li style="margin-top: 5%; margin-left: 15%;">
+                            <i style="color:red;" class="fa-regular fa-user"></i> Clubs most played
+                            <p style="font-size: 28px; font-weight: 600; padding: 0; margin:0; margin-top: 5%;">Amnesia Ibiza</p>
+                            <p style="font-size: 28px; font-weight: 600; padding: 0; margin:0;">Gashouder</p>
+                            <p style="font-size: 28px; font-weight: 600; padding: 0; margin:0;">fabric</p>
+                            <p style="font-size: 28px; font-weight: 600; padding: 0; margin:0;">Privilege</p>
+                            <p style="font-size: 28px; font-weight: 600; padding: 0; margin:0;">Berghain Panorama Bar</p>
+                            <p style="font-size: 28px; font-weight: 600; padding: 0; margin:0;">Saule</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid px-0">
+            <div class="col-md-12" style="background-color: #f2f2f2;">
+                <div class="offset-md-2 col-md-8">
+                    <h1 style="color: red; padding-top: 5%;"≯
+                        ABOUT</h1>
+                        <p style="padding-top: 5%;">KIDEPROJECT occupies a firm position among the few techno originators<br> who’ve stayed at the top of their game since the ‘90s. The Swede’s three-decade<br> career is an impressive unfurling of steadfast, future-focussed innovation and expansion.</p>
+                        <button style="background-color: #f2f2f2; color: black; border-radius: 20px; border: 2px solid red; padding: 20px; font-size: 16px; margin-top: 2%;" type="button" class="btn btn-danger">Read more</button>
+                        <h2 style="color: red; margin-top: 10%;">BOOKING INFORMATION</h2>
+                        <button style="background-color: #f2f2f2; color: black; border-radius: 20px; border: 2px solid red; padding: 10px; font-size: 16px; margin-top: 2%;" type="button" class="btn btn-danger">Show booking info</button>
+                        <h1 style="color: red; margin-top: 10%;"≯
+                            RELATED ARTISTS</h1>
+                            <div style="width: 90%; margin:auto; float: center;">
+                            <ul style="width: 100%; padding: 0; margin:auto; list-style: none; display: flex;">
+                                <li style="display: flex; margin: 2%; width: 33.33%;">
+                                    <div style="background-image:url(ida.png); width: 120px; height: 120px; background-size: cover; background-repeat: no-repeat; border-radius: 50%; margin-right: 10px;" class="kiddy">
+                                    
+                                    </div>
+                                    <div style="margin-top: 8%; padding-right: -5%;">
+                                        <h5>Ida Engberg</h5> 
+                                        <i class="fa-solid fa-user-plus"></i> Follow
+                                    </div>
+                                </li>
+                                <li style="display: flex; margin: 2%; width: 33.33%;">
+                                    <div style="background-image:url(jos.jpeg); width: 120px; height: 120px; background-size: cover; background-repeat: no-repeat; border-radius: 50%; margin-right: 10px;" class="kiddy">
+                                    
+                                    </div>
+                                    <div style="margin-top: 8%; padding-right: -5%;">
+                                        <h5>Joseph Capriati</h5> 
+                                        <i class="fa-solid fa-user-plus"></i> Follow
+                                    </div>
+                                </li>
+                                <li style="display: flex; margin: 2%; width: 33.33%;">
+                                    <div style="background-image:url(ric.jpeg); width: 120px; height: 120px; background-size: cover; background-repeat: no-repeat; border-radius: 50%; margin-right: 10px;" class="kiddy">
+                                    
+                                    </div>
+                                    <div style="margin-top: 8%; padding-right: -5%;">
+                                        <h5>Richie Hawtin</h5> 
+                                        <i class="fa-solid fa-user-plus"></i> Follow
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div style="width: 90%; margin:auto; float: center;">
+                            <ul style="width: 100%; padding: 0; margin:auto; list-style: none; display: flex;">
+                                <li style="display: flex; margin: 2%; width: 33.33%;">
+                                    <div style="background-image:url(alan.jpeg); width: 120px; height: 120px; background-size: cover; background-repeat: no-repeat; border-radius: 50%; margin-right: 10px;" class="kiddy">
+                                    
+                                    </div>
+                                    <div style="margin-top: 8%; padding-right: -5%;">
+                                        <h5>Alan Fitzpatrick</h5> 
+                                        <i class="fa-solid fa-user-plus"></i> Follow
+                                    </div>
+                                </li>
+                                <li style="display: flex; margin: 2%; width: 33.33%;">
+                                    <div style="background-image:url(joris.jpeg); width: 120px; height: 120px; background-size: cover; background-repeat: no-repeat; border-radius: 50%; margin-right: 10px;" class="kiddy">
+                                    
+                                    </div>
+                                    <div style="margin-top: 8%; padding-right: -5%;">
+                                        <h5>Joris Voorn</h5> 
+                                        <i class="fa-solid fa-user-plus"></i> Follow
+                                    </div>
+                                </li>
+                                <li style="display: flex; margin: 2%; width: 33.33%;">
+                                    <div style="background-image:url(sven.jpeg); width: 120px; height: 120px; background-size: cover; background-repeat: no-repeat; border-radius: 50%; margin-right: 10px;" class="kiddy">
+                                    
+                                    </div>
+                                    <div style="margin-top: 8%; padding-right: -5%;">
+                                        <h5>Sven Vath</h5> 
+                                        <i class="fa-solid fa-user-plus"></i> Follow
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <h2 style="color: red; margin-top: 5%;">LABELS</h2>
+                        <div style="width: 90%; margin:auto; float: center;">
+                            <ul style="width: 100%; padding: 0; margin:auto; list-style: none; display: flex;">
+                                <li style="display: flex; margin: 2%; width: 33.33%;">
+                                    <div style="background-image:url(tort.jpeg); width: 120px; height: 120px; background-size: cover; background-repeat: no-repeat; border-radius: 50%; margin-right: 10px;" class="kiddy">
+                                    
+                                    </div>
+                                    <div style="margin-top: 8%; padding-right: -5%;">
+                                        <h5>Tortured Records</h5> 
+                                        <i class="fa-solid fa-user-plus"></i> Follow
+                                    </div>
+                                </li>
+                                <li style="display: flex; margin: 2%; width: 33.33%;">
+                                    <div style="background-image:url(soma.jpeg); width: 120px; height: 120px; background-size: cover; background-repeat: no-repeat; border-radius: 50%; margin-right: 10px;" class="kiddy">
+                                    
+                                    </div>
+                                    <div style="margin-top: 8%; padding-right: -5%;">
+                                        <h5>Soma Records</h5> 
+                                        <i class="fa-solid fa-user-plus"></i> Follow
+                                    </div>
+                                </li>
+                                <li style="display: flex; margin: 2%; width: 33.33%;">
+                                    <div style="background-image:url(coc.jpeg); width: 120px; height: 120px; background-size: cover; background-repeat: no-repeat; border-radius: 50%; margin-right: 10px;" class="kiddy">
+                                    
+                                    </div>
+                                    <div style="margin-top: 8%; padding-right: -5%;">
+                                        <h5>Cocoon Recordings</h5> 
+                                        <i class="fa-solid fa-user-plus"></i> Follow
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div style="width: 90%; margin:auto; float: center;">
+                            <ul style="width: 100%; padding: 0; margin:auto; list-style: none; display: flex;">
+                                <li style="display: flex; margin: 2%; width: 33.33%;">
+                                    <div style="background-image:url(nova.jpeg); width: 120px; height: 120px; background-size: cover; background-repeat: no-repeat; border-radius: 50%; margin-right: 10px;" class="kiddy">
+                                    
+                                    </div>
+                                    <div style="margin-top: 8%; padding-right: -5%;">
+                                        <h5>novamute</h5> 
+                                        <i class="fa-solid fa-user-plus"></i> Follow
+                                    </div>
+                                </li>
+                                <li style="display: flex; margin: 2%; width: 33.33%;">
+                                    <div style="background-image:url(8rec.jpeg); width: 120px; height: 120px; background-size: cover; background-repeat: no-repeat; border-radius: 50%; margin-right: 10px;" class="kiddy">
+                                    
+                                    </div>
+                                    <div style="margin-top: 8%; padding-right: -5%;">
+                                        <h5>Plus 8 Records Ltd</h5> 
+                                        <i class="fa-solid fa-user-plus"></i> Follow
+                                    </div>
+                                </li>
+                                <li style="display: flex; margin: 2%; width: 33.33%;">
+                                    <div style="background-image:url(iba.jpeg); width: 120px; height: 120px; background-size: cover; background-repeat: no-repeat; border-radius: 50%; margin-right: 10px;" class="kiddy">
+                                    
+                                    </div>
+                                    <div style="margin-top: 8%; padding-right: -5%;">
+                                        <h5>Ibandan Records</h5> 
+                                        <i class="fa-solid fa-user-plus"></i> Follow
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div style="width: 90%; margin:auto; float: center;">
+                            <ul style="width: 100%; padding: 0; margin:auto; list-style: none; display: flex;">
+                                <li style="display: flex; margin: 2%; width: 33.33%;">
+                                    <div style="background-image:url(drum.jpeg); width: 120px; height: 120px; background-size: cover; background-repeat: no-repeat; border-radius: 50%; margin-right: 10px;" class="kiddy">
+                                    
+                                    </div>
+                                    <div style="margin-top: 8%; padding-right: -5%;">
+                                        <h5>Drumcode</h5> 
+                                        <i class="fa-solid fa-user-plus"></i> Follow
+                                    </div>
+                                </li>
+                                <li style="display: flex; margin: 2%; width: 33.33%;">
+                                    <div style="background-image:url(mad.jpeg); width: 120px; height: 120px; background-size: cover; background-repeat: no-repeat; border-radius: 50%; margin-right: 10px;" class="kiddy">
+                                    
+                                    </div>
+                                    <div style="margin-top: 8%; padding-right: -5%;">
+                                        <h5>Mad Eye</h5> 
+                                        <i class="fa-solid fa-user-plus"></i> Follow
+                                    </div>
+                                </li>
+                                <li style="display: flex; margin: 2%; width: 33.33%;">
+                                    <div style="background-image:url(apo.jpeg); width: 120px; height: 120px; background-size: cover; background-repeat: no-repeat; border-radius: 50%; margin-right: 10px;" class="kiddy">
+                                    
+                                    </div>
+                                    <div style="margin-top: 8%; padding-right: -5%;">
+                                        <h5>Apotek</h5> 
+                                        <i class="fa-solid fa-user-plus"></i> Follow
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+
+            <div class="col-md-12" style="background-color: #f2f2f2; padding-top: 10%; padding-bottom: 5%;">
+                <div class="offset-md-2 col-md-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1 style="color:red;"≯
+                                RA EXCHANGE</h1>
+                                <img src="adam.jpeg" alt="" style="width: 400px; height: 400px;"> <br>
+                                <p style="padding-top: 5%; font-weight: 800; opacity:0.6; font-size: 22px;">2014</p>
+                                <h1 class="adam">EX.211 Adam Beyer</h1>
+                                <p>This week Swedish techno artist Adam Beyer weighs in with a peaktime techno workout.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h1 style="color: red;"≯
+                                RA PODCAST</h1>
+                                <img src="elen.jpeg" alt="" style="width: 400px; height: 400px;"> <br>
+                                <p style="padding-top: 5%; font-weight: 800; opacity:0.6; font-size: 22px;">2006</p>
+                                <h1 class="elen">RA.030 Ellen Alien</h1>
+                                <p>We hear about the humble approach driving a DJing heavyweight.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid px-0">
+            <div class="offset-md-2 col-md-8">
+                <div class="row">
+                    <h1 style="padding-top: 5%; padding-bottom: 5%; color: red;"≯
+                        NEWS</h1>
+                    <div class="col-md-4">
+                        <img src="detr.jpeg" style="width: 315px;" alt="">
+                        <p style="padding-top: 5%; font-weight: 800; opacity:0.6; font-size: 12px;">TUE, 28 JAN 2020</p>
+                        <h4 class="detr" style="font-weight: 700;">Movement Detroit announces Sunday lineup for 2020</h4>
+                        <p>Adam Beyer, Special Request and Ellen Allien are among those playing the festival's second day.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="amelie.jpeg" style="width: 315px;" alt="">
+                        <p style="padding-top: 5%; font-weight: 800; opacity:0.6; font-size: 12px;">WED, 16 JAN 2019</p>
+                        <h4 class="amelie" style="font-weight: 700;">Amelie Lens remixes Adam Beyer for Drumcode's 200th release</h4>
+                        <p>She'll take on Beyer's 2014 track "Teach Me" for two new versions out this month.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="halo.jpeg" style="width: 315px;" alt="">
+                        <p style="padding-top: 5%; font-weight: 800; opacity:0.6; font-size: 12px;">WED, 8 AUG 2018</p>
+                        <h4 class="halo" style="font-weight: 700;">Charlotte De Witte, Alan Fitzpatrick to play Adam Beyer and LWE's Halloween party</h4>
+                        <p>Drumcode's spooky festivities at Tobacco Dock this year will feature Ida Engberg, Paco Osuna and Marco Faraone, among many others.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12" style="text-align: center; padding-bottom: 5%;">
+                <button style="background-color: white; color: black; border-radius: 20px; border: 2px solid red; padding: 10px; font-size: 12px; margin-top: 2%;" type="button" class="btn btn-danger">View more news</button>
+            </div>
+            <div class="col-md-12" style="height: 70px; background-color:#333; color: #333;">1</div>
+        </div>
+
+
+        <div class="container-fluid px-0">
+            <div class="col-md-12" style="background-color: black; color: white;">
+                <div class="offset-md-2 col-md-8">
+                    <div class="col-md-12" style="padding-top: 5%; padding-bottom: 5%;">
+                        <img src="ilmt.png" alt="" style="width: 80px;"> <br>
+                        <p style="padding-top: 5%; opacity: 0.6;">Discover</p>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="linkovi" style="display: flex; width: 100%;">
+                            <h3>About</h3>
+                            <h3 class="linkk"≯
+                                Tickets</h3>
+                            <h3 class="linkk"≯
+                                Resale</h3>
+                            <h3 class="linkk"≯
+                                Advertise</h3>
+                            <h3 class="linkk"≯
+                                Jobs</h3>
+                            <h3 class="linkk">RA Guide</h3>
+                            <h3 class="linkk"≯
+                                RA Scanner</h3>    
+                        </div>
+                    </div>
+                    <div class="col-md-12" style="padding-top: 5%;">
+                        <h1 style="opacity: 0.6;">Are you a promoter?</h1>
+                        <button style="background-color: black; color: white; border-radius: 20px; border: 2px solid red; padding: 10px; font-size: 18px; margin-top: 2%;" type="button" class="btn btn-danger">Submit an event</button>
+                    </div>
+                    <div class="col-md-12" style="padding-top: 5%; border-bottom: 1px solid gray; padding-bottom: 5px;">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <i class="fa-solid fa-globe"></i> Bosnia and Herzegovina
+                            </div>
+                            <div class="col-md-6 foot" style="display: flex; text-align: right; align-items: right; justify-content: right;">
+                                <a href="#">Privacy</a>
+                                <a href="#">Terms</a>
+                                <a href="#">Cookies</a>
+                                <a href="#">Sitemap</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12" style="padding-top: 5px; padding-bottom: 3%;">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p style="opacity: 0.7;">© 2023 Resident Advisor Ltd. All rights reserved.</p>
+                            </div>
+                            <div class="col-md-6 element" style="display: flex; text-align: right; justify-content: right; align-items: right; font-size: 22px; padding-top: 5px;">
+                                <i style="padding-right: 10%;" class="fa-brands fa-facebook"></i>
+                                <i style="padding-right: 10%;"v class="fa-brands fa-instagram"></i>
+                                <i style="padding-right: 10%;" class="fa-brands fa-youtube"></i>
+                                <i style="padding-right: 10%;" class="fa-brands fa-soundcloud"></i>
+                                <i class="fa-brands fa-spotify"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <script src="https://kit.fontawesome.com/cc646ce465.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

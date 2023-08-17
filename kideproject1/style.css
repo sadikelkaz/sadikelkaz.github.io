@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.ban1 {
+    padding: 1.2%;
+    padding-top: 2%;
+}
+
+.ban1 ul {
+    list-style: none;
+}
+
+.ban1 ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.ban2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.ban2 {
+    justify-content: right;
+    text-align: right;
+    padding-top: 1%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 0.1px solid red;
+}
+
+.text {
+    opacity: 0.7;
+}
+
+.naslov:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.text:hover {
+    cursor: pointer;
+    opacity:1 ;
+    color: white;
+}
+
+.slika {
+    cursor: pointer;
+}
+
+.adam:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.elen:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.detr:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.amelie:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.halo:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.linkovi a {
+    text-decoration: none;
+    color: white;
+    padding-left: 5%;
+    font-size: 34px;
+}
+
+.linkk {
+    padding-left: 4%;
+}
+
+.linkk:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.foot a {
+    text-decoration: none;
+    color: white;
+    padding-left: 2%;
+}
+
+.foot a:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.element i:hover {
+    color: red;
+    cursor: pointer;
+}
+
